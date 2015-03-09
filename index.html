@@ -152,41 +152,12 @@ header.global{
 <p class="buttons">
     <a class="button alt long corp readmore" href="https://play.google.com/store/search?q=pub:AMS%20Technology"><span>See all games</span> <span>»</span></a>
 </p>        </div>
-	<!--
+
           <div class="bg-video" style="margin-top: -16px; margin-left: 0px;">
             <video class="bg" id="hero-bg-video" poster="https://dl.dropboxusercontent.com/u/43298827/Happy%20Roll/Feature5.png" autoplay preload="yes" loop="true" muted="true">              
-              <source type="video/mp4" media="screen and (min-width:1025px)" src="https://dl.dropboxusercontent.com/u/43298827/Happy%20Roll/Happy_Roll.mp4">
+              <source type="video/mp4" media="screen and (min-width:1025px)" src="https://dl.dropboxusercontent.com/u/43298827/Happy%20Roll/Features.mp4">
             </video>
           </div>
-        -->
-        <style>
-        #cycler{position:relative;}
-	#cycler img{position:absolute;z-index:1}
-	#cycler img.active{z-index:3}
-	</style>
-	<script>
-	function cycleImages(){
-      var $active = $('#cycler .active');
-      var $next = ($active.next().length > 0) ? $active.next() : $('#cycler img:first');
-      $next.css('z-index',2);//move the next image up the pile
-      $active.fadeOut(1500,function(){//fade out the top image
-	  $active.css('z-index',1).show().removeClass('active');//reset the z-index and unhide the image
-          $next.css('z-index',3).addClass('active');//make the next image the top one
-      });
-    }
-
-$(document).ready(function(){
-// run every 7s
-setInterval('cycleImages()', 7000);
-})
-	
-</script>
-
-        <div id="cycler" class="bg">
-	<img class="active" src="Feature1.png" alt="Happy Roll" />
-	<img src="Feature2.png" alt="Gravity Line" />	
-	<img src="feature3.png" alt="Rocket" />	
-	</div>
         
       <div data-swiftype-index="false" class="cross-slider games-front visible">
   <div class="slide" id="slide-row-1"></div>
